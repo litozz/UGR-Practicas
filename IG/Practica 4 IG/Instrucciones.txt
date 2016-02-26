@@ -1,0 +1,40 @@
+1. Debido a algunos problemas con make, que no compilaba las clases cuando se hacía algún cambio sobre ellas, he escrito un script python que limpia, recompila y ejecuta. En lugar de ejecutar make, es preferible ejecutar: 
+	python compilar.py
+
+2. Una vez que se carga el programa, en initialize se calculan todas las figuras.
+
+3. Se pueden cambiar las figuras y los modos con las siguientes teclas:
+	1 -> Hormiga
+	2 -> Perfil del peón de ajedrez revolucionado con textura
+	3 -> Modelo jerárquico grua.
+		Cuando la grua está mostrándose se puden usar las siguientes teclas:
+		z 			-> retroceder carro
+		Z 			-> avanzar carro
+		x 			-> pluma arriba
+		X 			-> pluma abajo
+		c 			-> girar brazo a la derecha
+		C 			-> girar brazo a la izquierda
+		
+		q 			-> Activar el modo manual (Se maneja la grua con las teclas anteriores)
+		w			-> Desactivar el modo manual (Se activa la animacion)
+	4-> Escena de la lata de cocacola, peones y tablero
+	5-> Tablero solo
+	6-> Globo terráqueo
+	7-> Cilindro con textura	
+	P -> Modo puntos
+	L -> Modo líneas (malla)
+	S -> Modo sólido
+	A -> Modo ajedrez
+	/ -> Modo suavizado de Gouraud
+	* -> Modo suavizado Plano
+
+
+Cabe destacar que cada vez que se pulsa una tecla no se calcula ninguna de nuevo, sino que un puntero de vértices apuntará al vector de vertices del objeto que se solicita y un puntero de caras apuntará al vector de caras del objeto que se solicita, así, los únicos cálculos que el programa al cambiar de figura es reasignar la dirección a dos punteros. Las texturas sólo se calculan una vez.
+
+4. Cuando se inicia el programa, se verá muy cerca, esto es porque inicio con la grua y se ve grande. Lo único que hay que hacer es pulsar Repág (zoom -) o Avpág (zoom +) para ir ajustando según se desee.
+
+5. He leído la actividad en SWAD que decía que no se incluyeran los PLY ni los .o, pero si no incluyo los  PLY, el programa no iba a compilar. Pido disculpas ante cualquier inconveniente.
+
+6. Debido a que algunas teclas que se pedían ya estaban ocupadas y se pedía que la funcionalidad de la práctica anterior se mantuviera, he tenido que cambiar los controles de la fuente de luz. Se controlan con las teclas e/E,r/R,t/T (así como las teclas de las fuentes de luz anteriormente citadas.) 
+
+Gracias.

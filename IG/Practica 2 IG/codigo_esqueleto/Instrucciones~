@@ -1,0 +1,16 @@
+1. Hacer make si se cree necesario (compilar el código).
+2. Una vez que se carga el programa, en initialize se calculan todas las figuras.
+3. Se pueden cambiar las figuras y los modos con las siguientes teclas:
+	1 -> Hormiga
+	2 -> Beethoven
+	3 -> Dodge (coche)
+	4 -> Perfil del peón de ajedrez sin revolucionar
+	5 -> Perfil del peón de ajedrez revolucionado
+	6 -> Cilindro (cuadrado por revolución)
+	7 -> Cono (triángulo por revolución)
+	8 -> Cubo por barrido
+	P -> Modo puntos
+	L -> Modo líneas (malla)
+	S -> Modo sólido
+	A -> Modo ajedrez
+
